@@ -5,3 +5,7 @@ output "vpc" {
 output "subnets" {
   value = "${module.vpc.subnet_ids}"
 }
+
+output "private_subnets" {
+  value = "${module.vpc.private_subnet_ids}"
+}
